@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NYPSU About</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/about.css"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="homepage.html">
+        <img src="images/nypsuColoured.png" alt="Logo" class="logo-img"/>
+      </a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2 active" aria-current="page" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="enquiry.html">Enquiry</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="join.html" class="join-button">Join Us</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Hero Section -->
+  <div class="hero lazy-load">
+    <div class="hero-content">
+      <h1>About Us</h1>
+      <p>About Us is about YOU - the students who make NYP vibrant, bold, and unstoppable.</p>
+    </div>
+  </div>
+
+  <!-- Main Content with Lazy Load -->
+  <main class="main-content">
+    <!-- Mission Section -->
+    <section class="mission-section section-padding lazy-load" id="mission">
+        <div class="container text-center lazy-load">
+          <div class="mission-icon mb-3">
+            <i class="fas fa-rocket fa-3x"></i>
+          </div>
+          <div class="section-header mb-4">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="section-divider"></div>
+          </div>
+        </div>
+      
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0 lazy-load">
+              <video class="img-fluid mission-video rounded shadow lazy-load"
+                     autoplay loop muted playsinline preload="metadata"
+                     aria-label="Students at NYP">
+                <source src="videos/campvid.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-lg-7 lazy-load">
+              <div class="mission-content fancy-card">
+                <p class="mission-text">
+                  The Nanyang Polytechnic Students' Union (NYPSU) exists to 
+                  <span class="highlight">empower</span>, 
+                  <span class="highlight">represent</span>, and 
+                  <span class="highlight">serve</span> the diverse student community. 
+                  Our mission is to cultivate leaders, nurture talents, 
+                  and foster a vibrant campus life for every student.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>      
+      
+    <!-- Stats Section -->
+    <section class="stats-section section-padding lazy-load" id="stats">
+        <div class="container text-center lazy-load">
+          <div class="section-header mb-4">
+            <h2 class="section-title">Shaping Campus Life</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+                Our journey in numbers - showcasing the impact we create for every NYP student.
+            </p>
+          </div>
+      
+          <div class="row justify-content-center stats-grid lazy-load">
+            <div class="col-sm-6 col-md-3 stat-item">
+              <div class="stat-number" data-target="2675">0</div>
+              <div class="stat-label">Subcommittee Members</div>
+            </div>
+            <div class="col-sm-6 col-md-3 stat-item">
+              <div class="stat-number" data-target="1992" data-format="year">1992</div>
+              <div class="stat-label">Established In</div>
+            </div>
+            <div class="col-sm-6 col-md-3 stat-item">
+              <div class="stat-number" data-target="35">0</div>
+              <div class="stat-label">Active Clubs Supported</div>
+            </div>
+          </div>
+        </div>
+    </section>  
+
+    <!-- Values Section -->
+    <section class="values-section section-padding lazy-load" id="values">
+      <div class="container lazy-load">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Our Core Values</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 lazy-load">
+            <div class="value-card">
+              <div class="value-icon"><i class="fas fa-bullseye"></i></div>
+              <div class="value-content">
+                <h5 class="value-title">Leadership</h5>
+                <p class="value-description">Fostering leadership skills and encourage students to take initiative and make an impact.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 lazy-load">
+            <div class="value-card">
+              <div class="value-icon"><i class="fas fa-users"></i></div>
+              <div class="value-content">
+                <h5 class="value-title">Community</h5>
+                <p class="value-description">Building a strong, supportive, and inclusive student community where everyone belongs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 lazy-load">
+            <div class="value-card">
+              <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+              <div class="value-content">
+                <h5 class="value-title">Innovation</h5>
+                <p class="value-description">Encouraging fresh ideas, creativity, and proactive approaches to student life and advocacy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team Section -->
+    <section id="team" class="team-section section-padding lazy-load">
+      <div class="container text-center lazy-load">
+        
+        <!-- Section Header -->
+        <div class="section-header mb-5">
+          <h2 class="section-title">Union Leaders</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Junior &amp; Senior Excos -->
+        <div class="row justify-content-center g-5">
+          <!-- Junior Excos -->
+          <div class="col-md-6 lazy-load">
+            <div class="team-card">
+              <div class="team-text">
+                <h3 class="team-name">Junior Excos</h3>
+              </div>
+              <img src="images/jnrs.jpg" alt="Junior Excos" class="team-photo lazy-load" loading="lazy" />
+              <div class="team-text">
+                <p class="team-role">
+                  Our Junior Excos supports event planning and brings fresh energy to NYPSU's initiatives. They contribute new ideas and grow as emerging leaders in the student community.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Senior Excos -->
+          <div class="col-md-6 lazy-load">
+            <div class="team-card">
+              <div class="team-text">
+                <h3 class="team-name">Senior Excos</h3>
+              </div>
+              <img src="images/snrs.jpg" alt="Senior Excos" class="team-photo lazy-load" loading="lazy" />
+              <div class="team-text">
+                <p class="team-role">
+                  Our Senior Excos leads with experience and vision, guiding the team, mentoring juniors, and ensuring the success of NYPSU's projects and events.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Roles Carousel -->
+        <h2 id="carousel-title">CORE COMMITTEE</h2>
+        <div class="section-divider"></div>
+        <div id="leadersCarousel" class="carousel slide mt-5 lazy-load" data-bs-ride="carousel">
+          <div class="carousel-inner text-start">
+
+            <!-- Carousel Items -->
+            <div class="carousel-item active">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                  <img src="images/president.jpeg" class="img-fluid rounded team-photo" alt="President" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                  <h4 class="team-name">President</h4>
+                  <h4 class="team-name">Titus</h4>
+                  <p class="team-role">💥 Titus (President) - The big boss himself, the fearless captain at the helm 🚢🔥. Steering the ship with clear vision, making bold calls, and representing NYPSU loud and proud wherever he goes. When Titus leads, the whole crew rises together, ready to conquer new horizons 📣🚀.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                  <img src="images/internalvp.jpeg" class="img-fluid rounded team-photo" alt="Internal Vice President" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                  <h4 class="team-name">Internal Vice President</h4>
+                  <h4 class="team-name">Alyana</h4>
+                  <p class="team-role">💥 Alyana (Internal Vice-President) - The heartbeat behind the scenes ❤️‍🔥. She's the quiet storm orchestrating every internal move 🎼 — keeping the Exco aligned, sharp, and moving as one. With her calm command and fierce dedication, she doesn't just support the team — she's the reason it runs like a well-oiled machine 🔧✨. When she steps in, the energy doesn't just shift — it elevates 🔄⚡.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                  <img src="images/externalvp.jpeg" class="img-fluid rounded team-photo" alt="External Vice President" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                  <h4 class="team-name">External Vice President</h4>
+                  <h4 class="team-name">Grace</h4>
+                  <p class="team-role">💥 Grace (External Vice-President) - The ultimate bridge-builder 🌉 and people magnet 🫂. Turning connections into collaborations 🤝 and partnerships into power moves, she makes sure NYPSU's presence shines far beyond campus walls. When Grace is in the room, new possibilities aren't just imagined, they're set in motion 🎬.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                  <img src="images/specialprojs.jpeg" class="img-fluid rounded team-photo" alt="Special Projects" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                  <h4 class="team-name">Special Projects Vice President</h4>
+                  <h4 class="team-name">Jia Qi</h4>
+                  <p class="team-role">💥 Jia Qi (Special Projects Vice-President) - The visionary with a get-it-done spirit ⚡👩‍💼. From SDAR collaborations to bold, campus-wide projects 🎉, she's the spark that takes big dreams off the screen and brings them to life. When Jia Qi starts moving, even the wildest ideas turn into standing ovations 🌟.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                  <img src="images/secretary.jpeg" class="img-fluid rounded team-photo" alt="Secretary" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                  <h4 class="team-name">Honorary General Secretary</h4>
+                  <h4 class="team-name">Wyvin</h4>
+                  <p class="team-role">💥 Wyvin (General Secretary) - The kind of leader who doesn't chase control — she just has it 😌🧊. Calm under pressure, sharp in thought 🧠, and always one step ahead. Whether it's coordinating plans 📋, handling logistics 📦, or keeping everyone in check, Wyvin is the steady force behind NYPSU's momentum 🚀.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                  <img src="images/leadership.jpeg" class="img-fluid rounded team-photo" alt="Leadership" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                  <h4 class="team-name">Leadership Development Secretary</h4>
+                  <h4 class="team-name">Yixuan</h4>
+                  <p class="team-role">💥 Yixuan (Leadership Development Secretary) - The bold 💪, relentless force behind our leadership engine. Fiercely driven and full of heart ❤️, she's the spark ⚡ that sets ideas in motion and the anchor ⚓ that keeps us grounded. With a sharp eye for potential 👀 and a steady hand on the wheel, she leads with grit, grace, and purpose 🎯 — making leadership look effortless, but always intentional.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                  <img src="images/financial.jpeg" class="img-fluid rounded team-photo" alt="Financial" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                  <h4 class="team-name">Financial Secretary</h4>
+                  <h4 class="team-name">Wen Bing</h4>
+                  <p class="team-role">💥 Wen Bing (Financial Secretary) - The budget boss who keeps our numbers crisp 💼 and our funds flowing 💸. Always ready to crunch numbers like a calculator on caffeine ☕, she balances books 📚, tracks every cent 💰, and makes sure every dollar makes sense. With eyes sharp as a hawk 🔍 and spreadsheets cleaner than your desktop, she keeps NYPSU financially fierce and future-ready 🚀.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                  <img src="images/alumni.jpeg" class="img-fluid rounded team-photo" alt="Alumni" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                  <h4 class="team-name">Alumni Relations Secretary</h4>
+                  <h4 class="team-name">Hady</h4>
+                  <p class="team-role">💥 Hady (Alumni Relations Secretary) - The master of connections and the steady hand behind keeping our alumni family close. He doesn't just maintain ties — he builds bridges that last a lifetime 🌉. From casual chats to unbreakable bonds, he's the energy that turns simple catch-ups into unforgettable memories 🫶. Quiet? Maybe. But his impact? Loud, lasting, and impossible to miss 🔊✅.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-4">
+                  <img src="images/welfare.jpeg" class="img-fluid rounded team-photo" alt="Welfare" loading="lazy">
+                </div>
+                <div class="col-md-6">
+                  <h4 class="team-name">Welfare Secretary</h4>
+                  <h4 class="team-name">Ernest</h4>
+                  <p class="team-role">💥 Ernest (Welfare Secretary) - The driving force with not just a big presence, but an even bigger heart ❤️‍🔥 - one that echoes through every corner of the campus. He doesn't just show up — he shows up for you. From checking in to cheering on, he makes sure every voice is heard, every concern felt, and every student seen 🎤⚡.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#leadersCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#leadersCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Meeting Schedule -->
+    <section class="meetings-section section-padding lazy-load" id="meetings">
+      <div class="container lazy-load">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Our Meetings</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <!-- Meeting Info -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="fancy-card text-center">
+              <p class="lead mb-2">
+                As an <strong>event-based CCA</strong>, NYPSU holds official meetings every <strong>first week of the month</strong>, on <strong>Friday from 7:00 PM to 9:00 PM</strong>.
+              </p>
+              <p>
+                Event Participation is <strong>first come, first serve</strong>. Slots may fill up quickly, so be sure to sign up early for our upcoming events!
+              </p>
+              <a href="events.html" class="cta-button">
+                <span>Upcoming Events</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Calendar -->
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div id="meeting-calendar" class="meeting-calendar rounded shadow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Activities Section -->
+    <section class="activities-section section-padding lazy-load" id="activities">
+        <div class="container lazy-load">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">What We Do</h2>
+            <div class="section-divider"></div>
+        </div>
+    
+        <div class="carousel-wrapper lazy-load">
+            <button class="carousel-btn prev-btn" aria-label="Previous">&#10094;</button>
+    
+            <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="activity-item solid-color-1">
+                  <div class="activity-icon"><i class="fas fa-calendar-alt"></i></div>
+                  <div class="activity-content">
+                      <h6>Organise Events &amp; Workshops</h6>
+                      <p>Exciting events and workshops to enrich student life and create memorable experiences.</p>
+                  </div>
+                </div>
+    
+                <div class="activity-item solid-color-2">
+                  <div class="activity-icon"><i class="fas fa-bullhorn"></i></div>
+                  <div class="activity-content">
+                      <h6>Student Advocacy</h6>
+                      <p>Advocate for student interests and welfare within the polytechnic community.</p>
+                  </div>
+                </div>
+    
+                <div class="activity-item solid-color-3">
+                  <div class="activity-icon"><i class="fas fa-rocket"></i></div>
+                  <div class="activity-content">
+                      <h6>Leadership Development</h6>
+                      <p>Provide platforms for leadership development and collaborative opportunities.</p>
+                  </div>
+                </div>
+    
+                <div class="activity-item solid-color-4">
+                  <div class="activity-icon"><i class="fas fa-handshake"></i></div>
+                  <div class="activity-content">
+                      <h6>Support Student Clubs</h6>
+                      <p>Support student clubs and initiatives for a thriving campus community.</p>
+                  </div>
+                </div>
+    
+                <div class="activity-item solid-color-5">
+                  <div class="activity-icon"><i class="fas fa-globe"></i></div>
+                  <div class="activity-content">
+                      <h6>Community Outreach</h6>
+                      <p>Engage with local communities and encourage student participation in social causes.</p>
+                  </div>
+                </div>
+    
+                <div class="activity-item solid-color-6">
+                  <div class="activity-icon"><i class="fas fa-users"></i></div>
+                  <div class="activity-content">
+                      <h6>Networking Events</h6>
+                      <p>Facilitate opportunities for students to connect with industry professionals and alumni.</p>
+                  </div>
+                </div>
+    
+                <div class="activity-item solid-color-7">
+                  <div class="activity-icon"><i class="fas fa-lightbulb"></i></div>
+                  <div class="activity-content">
+                      <h6>Innovation &amp; Ideas</h6>
+                      <p>Encourage creativity and innovation through various student-led initiatives.</p>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-btn next-btn" aria-label="Next">&#10095;</button>
+        </div>
+        </div>
+    </section>  
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding lazy-load">
+      <div class="container lazy-load">
+        <div class="cta-content text-center">
+          <h2 class="cta-title">Ready to Take Part?</h2>
+          <p class="cta-subtitle">Join NYPSU today and become part of a community shaping the future!</p>
+          <a href="join.html" class="cta-button">
+            <span>Join Us Today</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <br/><br/><br/><br/><br/><br/>
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon">
+      <li><a href="https://www.tiktok.com/@nypsu" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a></li>
+      <li><a href="https://www.instagram.com/nypsu" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://x.com/nypsu_grp" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.facebook.com/nypstudentunion/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://sg.linkedin.com/company/nypsu" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+    <ul class="menu">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="join.html">Join Us</a></li>
+    </ul>
+    <p>&copy; 2025 Nanyang Polytechnic Students' Union | All rights reserved.</p>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/about.js"></script>
+</body>
+</html>

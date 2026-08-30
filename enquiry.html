@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NYPSU Enquiry</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/enquiry.css"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="homepage.html">
+        <img src="images/nypsuColoured.png" alt="Logo" class="logo-img" />
+      </a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2 active" aria-current="page" href="enquiry.html">Enquiry</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="join.html" class="join-button">Join Us</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <div class="hero lazy-load">
+      <div class="hero-content fade-text">
+        <h1>Got Questions?<br> We've Got Answers</h1>
+        <p>Find everything you need to know about NYP Student Union membership, events, and services.<br />
+          Can't find what you're looking for? We're here to help!</p>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <!-- Category Tabs -->
+        <div class="category-container">
+          <div class="category-tabs" role="tablist" aria-label="FAQ categories">
+            <button class="category-tab active" id="tab-membership" data-category="membership" role="tab" aria-controls="faq-panel" aria-selected="true" tabindex="0">
+              <i class="fas fa-user-plus"></i>
+              <span>Membership</span>
+              <div class="tab-indicator"></div>
+            </button>
+
+            <button class="category-tab" id="tab-events" data-category="events" role="tab" aria-controls="faq-panel" aria-selected="false" tabindex="-1">
+              <i class="fas fa-calendar-day"></i>
+              <span>Events</span>
+              <div class="tab-indicator"></div>
+            </button>
+
+            <button class="category-tab" id="tab-suggestions" data-category="suggestions" role="tab" aria-controls="faq-panel" aria-selected="false" tabindex="-1">
+              <i class="fas fa-lightbulb"></i>
+              <span>Suggestions</span>
+              <div class="tab-indicator"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="faq-container" id="faq-panel" role="tabpanel" aria-labelledby="tab-membership">
+          <!-- Membership FAQs -->
+          <div class="faq-card" data-category="membership">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-info-circle"></i></div>
+                <span class="question-text">What is the Student Union?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>NYPSU is an event-based student organisation that brings students together through fun and meaningful campus-wide events. We aim to create memorable experiences and foster a strong sense of community within NYP.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="membership">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-user-plus"></i></div>
+                <span class="question-text">How do I join?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>Join at our booth during orientation, visit our office, or complete the online membership form which is open to all NYP students.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="membership">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-gift"></i></div>
+                <span class="question-text">What roles can I take on in NYPSU?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>You can be a general member, an event volunteer, or apply for leadership positions such as EXCO (Executive Committee) during recruitment periods.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="membership">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-sync-alt"></i></div>
+                <span class="question-text">Are there any requirements to stay active in NYPSU?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>There are no strict requirements for members, but the more you participate, the more CCA points and experience you'll gain!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="membership">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-exchange-alt"></i></div>
+                <span class="question-text">Can I still join NYPSU if I'm already in another CCA?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>Yes! Many students manage multiple CCAs. Just make sure you can balance your commitments.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Events FAQs -->
+          <div class="faq-card" data-category="events">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-calendar-alt"></i></div>
+                <span class="question-text">What events do you organise?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>Social gatherings, sports, career fairs, cultural celebrations, workshops, seminars, and community service activities throughout the year.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="events">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-ticket-alt"></i></div>
+                <span class="question-text">Are NYPSU events open to all students?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>Yes! Most events are open to all NYP students, though members sometimes enjoy priority slots or perks.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="events">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-money-bill-wave"></i></div>
+                <span class="question-text">How do I sign up for events?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>Registration links are sent in our WhatsApp group chat which you will be added to if you join us!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="events">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-bullhorn"></i></div>
+                <span class="question-text">Are events beginner-friendly?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>100%! NYPSU events are designed to be welcoming, inclusive, and perfect for making new friends.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="events">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span class="question-text">Where are events held?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>Across campus venues, lounges, sports complexes, and occasionally external locations announced ahead.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Suggestions FAQs -->
+          <div class="faq-card" data-category="suggestions">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-lightbulb"></i></div>
+                <span class="question-text">I have an idea for a campus event. Can I share it?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>Absolutely! We welcome suggestions via our social media DMs, feedback forms after events, or by approaching any NYPSU committee member.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="suggestions">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-clipboard-check"></i></div>
+                <span class="question-text">How are suggestions reviewed?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>Reviewed monthly for feasibility and interest, you'll receive feedback within two weeks.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="suggestions">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-user-secret"></i></div>
+                <span class="question-text">Can suggestions be anonymous?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>Yes, anonymous submissions are supported, though contact details help for follow-up.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="suggestions">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-clock"></i></div>
+                <span class="question-text">How do I give feedback about an NYPSU event?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>We usually send out feedback forms after each event, but you can also message us directly on Instagram or email us.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-card" data-category="suggestions">
+            <h3 class="faq-heading"><button type="button" class="faq-question fade-text" aria-expanded="false">
+              <div class="question-content">
+                <div class="question-icon"><i class="fas fa-history"></i></div>
+                <span class="question-text">Will my suggestion or feedback actually be considered?</span>
+              </div>
+              <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+            </button></h3>
+            <div class="faq-answer">
+              <div class="answer-content">
+                <p>Yes! Every idea and comment is reviewed by our team. While we may not implement everything immediately, student input plays a big role in shaping future events and improvements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Question -->
+        <div class="submit-section">
+          <div class="submit-card">
+            <div class="submit-icon fade-text">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="submit-content fade-text">
+              <h3>Still Have Questions?</h3>
+              <p>Can't find what you're looking for? Submit your question and our team will get back to you within 24
+                hours.</p>
+              <a href="qns.html" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> <span>Ask a Question</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-grid container">
+        <div class="contact-info fade-text">
+          <h2>Get in Touch</h2>
+          <p>Ready to join our community or need immediate assistance? Our team is here to help!</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-details">
+                <h4>Email Us</h4>
+                <p>studentunion@nyp.edu.sg</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-details">
+                <h4>Call Us</h4>
+                <p>+65 6451 5115</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>
+                  Nanyang Polytechnic<br />
+                  180 Ang Mo Kio Avenue 8, Singapore 569830 <br />
+                  Block E, Room E308
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-cta fade-text">
+          <div class="cta-card">
+            <h3>Join Our Community</h3>
+            <p>Be part of something bigger. Connect with fellow students, access exclusive events, and make your voice
+              heard.</p>
+            <div class="cta-buttons">
+              <a href="join.html" class="cta-primary"><i class="fas fa-user-plus"></i> Join Now</a>
+              <a href="events.html" class="cta-secondary"><i class="fas fa-calendar"></i> View Events</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <br /><br /><br /><br /><br /><br />
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon">
+      <li><a href="https://www.tiktok.com/@nypsu" target="_blank" rel="noopener noreferrer"><i
+            class="fab fa-tiktok"></i></a></li>
+      <li><a href="https://www.instagram.com/nypsu" target="_blank" rel="noopener noreferrer"><i
+            class="fab fa-instagram"></i></a></li>
+      <li><a href="https://x.com/nypsu_grp" target="_blank" rel="noopener noreferrer"><i
+            class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.facebook.com/nypstudentunion/" target="_blank" rel="noopener noreferrer"><i
+            class="fab fa-facebook"></i></a></li>
+      <li><a href="https://sg.linkedin.com/company/nypsu" target="_blank" rel="noopener noreferrer"><i
+            class="fab fa-linkedin"></i></a></li>
+    </ul>
+    <ul class="menu">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="join.html">Join Us</a></li>
+    </ul>
+    <p>&copy; 2025 Nanyang Polytechnic Students' Union | All rights reserved.</p>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/enquiry.js"></script>
+</body>
+</html>

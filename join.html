@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NYPSU Join Us</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/join.css"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="homepage.html">
+        <img src="images/nypsuColoured.png" alt="Logo" class="logo-img" />
+      </a>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link mx-lg-2" href="enquiry.html">Enquiry</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center gap-3">
+        <a href="join.html" class="join-button">Join Us</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Join Us</h1>
+      <p>
+        Join us and be the driving force behind NYP — take the lead, drive
+        impact, and turn your student life into something unforgettable.
+      </p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <div class="form-card" role="region" aria-labelledby="formHeading">
+    <div class="form-header">
+      <h2 id="formHeading">Join Our Committee</h2>
+      <div class="required-note">
+        <span aria-hidden="true" class="required">*</span>
+        <span>indicates required question</span>
+      </div>
+    </div>
+
+    <form id="joinForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name <span class="required">*</span></label>
+          <div class="input-container">
+            <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Enter your first name" required autocomplete="given-name" />
+            <i class="fas fa-user input-icon" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name <span class="required">*</span></label>
+          <div class="input-container">
+            <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Enter your last name" required autocomplete="family-name" />
+            <i class="fas fa-user input-icon" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email <span class="required">*</span></label>
+        <div class="input-container">
+          <input type="email" id="email" name="email" class="form-input with-icon" placeholder="E.g. johntan@gmail.com" required autocomplete="email" />
+          <i class="fas fa-envelope input-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number <span class="required">*</span></label>
+        <div class="input-container">
+          <input type="tel" id="phone" name="phone" class="form-input with-icon" placeholder="E.g. 88257503" minlength="8" maxlength="8" required pattern="\d{8}" autocomplete="tel" />
+          <i class="fas fa-phone input-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="school">School <span class="required">*</span></label>
+        <div class="input-container">
+          <select id="school" name="school" class="form-input" required>
+            <option value="" disabled selected>&nbsp;&nbsp;Select your school</option>
+            <option value="School of Business Management">&nbsp;&nbsp;School of Business Management</option>
+            <option value="School of Engineering">&nbsp;&nbsp;School of Engineering</option>
+            <option value="School of Design &amp; Media">&nbsp;&nbsp;School of Design &amp; Media</option>
+            <option value="School of Information Technology">&nbsp;&nbsp;School of Information Technology</option>
+            <option value="School of Applied Sciences">&nbsp;&nbsp;School of Applied Sciences</option>
+            <option value="School of Health &amp; Social Sciences">&nbsp;&nbsp;School of Health &amp; Social Sciences</option>
+          </select>
+          <i class="fas fa-school input-icon" aria-hidden="true"></i>
+        </div>
+      </div>   
+      <div class="form-group">
+        <label for="course">Course <span class="required">*</span></label>
+        <div class="input-container">
+          <input type="text" id="course" name="course" class="form-input" placeholder="E.g. Diploma in Applied AI and Analytics" required />
+          <i class="fas fa-book input-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="interviewDate">Available Dates <span class="required">*</span></label>
+          <input type="date" id="interviewDate" name="interviewDate" class="form-input" required aria-describedby="interviewDateHint" />
+          <small class="form-text text-muted" id="interviewDateHint">Loading available interview slots&hellip;</small>
+        </div>
+        <div class="form-group">
+          <label for="interviewTime">Select Time Slot <span class="required">*</span></label>
+          <select id="interviewTime" name="interviewTime" class="form-input" required>
+            <option value="">-- Select a time --</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="10:30">10:30 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="11:30">11:30 AM</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="13:00">1:00 PM</option>
+            <option value="13:30">1:30 PM</option>
+            <option value="14:00">2:00 PM</option>
+            <option value="14:30">2:30 PM</option>
+            <option value="15:00">3:00 PM</option>
+            <option value="15:30">3:30 PM</option>
+            <option value="16:00">4:00 PM</option>
+            <option value="16:30">4:30 PM</option>
+            <option value="17:00">5:00 PM</option>
+          </select>
+        </div>
+      </div>      
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary" id="submitBtn" aria-live="polite" aria-busy="false">
+          <span id="submitText">Submit Application</span>
+          <i class="fas fa-paper-plane" id="submitIcon"></i>
+          <div class="loading-spinner" id="loadingSpinner" aria-hidden="true" style="display: none;"></div>
+        </button>
+        <button type="button" class="btn btn-secondary" id="resetBtn">Clear Form</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <br /><br /><br /><br /><br /><br />
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon">
+      <li><a href="https://www.tiktok.com/@nypsu" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a></li>
+      <li><a href="https://www.instagram.com/nypsu" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://x.com/nypsu_grp" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.facebook.com/nypstudentunion/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://sg.linkedin.com/company/nypsu" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+    <ul class="menu">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="join.html">Join Us</a></li>
+    </ul>
+    <p>&copy; 2025 Nanyang Polytechnic Students' Union | All rights reserved.</p>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/join.js"></script>
+</body>
+</html>
