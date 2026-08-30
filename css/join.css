@@ -519,17 +519,8 @@
     transition: border-color 0.3s ease;
   }
   
-  .input-container select.form-input::after {
-    content: '\f107';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-    color: linen;
-  }
+  /* NOTE: a custom chevron via ::after cannot work on <select> (replaced
+     element, no generated content). The .input-icon <i> in the markup handles it. */
   
   .input-container {
     position: relative;
